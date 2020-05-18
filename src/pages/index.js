@@ -34,7 +34,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head title={displayName} />
-      <img class="smajli" alt="haha" src={smajli} />
+      <img className="smajli" alt="haha" src={smajli} />
       {documentToReactComponents(
         data.contentfulIndexData.description.json,
         options

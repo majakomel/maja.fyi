@@ -1,0 +1,23 @@
+.player {
+  border: 4px dashed black;
+  position: absolute;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.player-hide {
+  display: none;
+}
+
+.close-icon {
+  float: right;
+  margin-bottom: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5aec00;
+}
