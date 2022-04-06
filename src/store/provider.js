@@ -1,5 +1,5 @@
 import React from "react"
-import providerStyles from "./providerStyles.module.scss"
+import * as providerStyles from "./providerStyles.module.scss"
 
 export const PlayerContext = React.createContext()
 

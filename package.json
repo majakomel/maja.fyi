@@ -13,25 +13,29 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "@contentful/rich-text-react-renderer": "^13.4.0",
-    "gatsby": "^2.20.9",
-    "gatsby-plugin-react-helmet": "^3.2.1",
-    "gatsby-plugin-sass": "^2.1.1",
-    "gatsby-plugin-sharp": "^2.5.3",
-    "gatsby-remark-images": "^3.2.1",
-    "gatsby-remark-images-contentful": "^2.2.2",
-    "gatsby-remark-relative-images": "^0.3.0",
-    "gatsby-source-contentful": "^2.2.5",
-    "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-remark": "^2.7.1",
-    "node-sass": "^4.13.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "@contentful/rich-text-react-renderer": "^15.12.0",
+    "gatsby": "^4.11.2",
+    "gatsby-plugin-image": "^2.11.1",
+    "gatsby-plugin-react-helmet": "^5.11.0",
+    "gatsby-plugin-sass": "^5.11.1",
+    "gatsby-plugin-sharp": "^4.11.1",
+    "gatsby-remark-images": "^6.11.1",
+    "gatsby-remark-images-contentful": "^5.11.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-contentful": "^7.9.1",
+    "gatsby-source-filesystem": "^4.11.1",
+    "gatsby-transformer-remark": "^5.11.1",
+    "node-fetch": "^3.2.3",
+    "postcss": "^8.4.12",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.49.11",
+    "typescript": "^4.6.3"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
-    "prettier": "^1.18.2"
+    "prettier": "^2.6.2"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { BLOCKS } from '@contentful/rich-text-types';
 
 import Layout from "../components/layout"
 import Head from "../components/head"
@@ -13,7 +14,7 @@ const IndexPage = () => {
       contentfulIndexData {
         name
         description {
-          json
+          raw
         }
       }
     }
@@ -23,20 +24,20 @@ const IndexPage = () => {
 
   const options = {
     renderNode: {
-      "embedded-asset-block": node => {
+      [BLOCKS.EMBEDDED_ASSET]: (node) => {
         const alt = node.data.target.fields.title["en-US"]
         const url = node.data.target.fields.file["en-US"].url
         return <img alt={alt} src={url} />
       },
     },
   }
-
+  console.log("-------", data.contentfulIndexData.description.raw)
   return (
     <Layout>
       <Head title={displayName} />
       <img className="smajli" alt="haha" src={smajli} />
       {documentToReactComponents(
-        data.contentfulIndexData.description.json,
+        JSON.parse(data.contentfulIndexData.description.raw),
         options
       )}
     </Layout>

@@ -9,7 +9,7 @@ const Footer = () => {
       contentfulIndexData {
         name
         description {
-          json
+          raw
         }
         githubUrl
         gitlabUrl
