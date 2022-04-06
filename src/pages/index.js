@@ -31,7 +31,7 @@ const IndexPage = () => {
       },
     },
   }
-  console.log("-------", data.contentfulIndexData.description.raw)
+  
   return (
     <Layout>
       <Head title={displayName} />
